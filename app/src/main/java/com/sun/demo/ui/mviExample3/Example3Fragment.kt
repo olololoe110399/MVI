@@ -1,4 +1,4 @@
-package com.sun.demo.ui.mvi.mviVM
+package com.sun.demo.ui.mviExample3
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,17 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import com.sun.demo.R
 
-class Demo2Fragment : Fragment() {
+class Example3Fragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_demo2, container, false)
+        return inflater.inflate(R.layout.fragment_example_3, container, false)
     }
 
     companion object {
         @JvmStatic
-        fun newInstance() = Demo2Fragment()
+        fun newInstance() = Example3Fragment()
     }
 }

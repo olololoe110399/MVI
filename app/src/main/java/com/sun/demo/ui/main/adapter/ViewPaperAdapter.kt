@@ -12,11 +12,5 @@ class ViewPaperAdapter(
 
     override fun getItem(position: Int) = fragments[position]
 
-    override fun getPageTitle(position: Int) = when (position) {
-        0 -> "Count"
-        1 -> "MVI"
-        2 -> "MVI+VM"
-        3 -> "MVI+VM+Fixed"
-        else -> null
-    }
+    override fun getPageTitle(position: Int) = "Example ${position + 1}"
 }
