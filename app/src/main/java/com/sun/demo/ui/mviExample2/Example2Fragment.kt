@@ -47,7 +47,7 @@ class Example2Fragment : Fragment() {
     private fun render(state: Example2ViewState) = when (state) {
         Example2ViewState.Loading -> renderLoading()
         is Example2ViewState.Success -> renderSuccess(state.movies)
-        is Example2ViewState.Error -> renderError(state.e)
+        is Example2ViewState.Error -> renderError(state.error)
     }
 
     private fun renderLoading() {

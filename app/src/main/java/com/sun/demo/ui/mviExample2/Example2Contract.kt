@@ -10,7 +10,7 @@ interface Example2Contract {
 
     sealed class Example2ViewState {
         object Loading : Example2ViewState()
-        data class Error(val e: Throwable) : Example2ViewState()
+        data class Error(val error: Throwable) : Example2ViewState()
         data class Success(val movies: List<Movie>) : Example2ViewState()
     }
 
@@ -20,7 +20,7 @@ interface Example2Contract {
 
     sealed class Example2Result {
         object LoadingResult : Example2Result()
-        data class ErrorResult(val e: Throwable) : Example2Result()
+        data class ErrorResult(val error: Throwable) : Example2Result()
         data class SuccessResult(val movies: List<Movie>) : Example2Result()
     }
 }
