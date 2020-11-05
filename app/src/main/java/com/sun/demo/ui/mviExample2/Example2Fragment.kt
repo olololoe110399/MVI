@@ -1,4 +1,4 @@
-package com.sun.demo.ui.count
+package com.sun.demo.ui.mviExample2
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,17 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import com.sun.demo.R
 
-class CountFragment : Fragment() {
+class Example2Fragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_count, container, false)
+        return inflater.inflate(R.layout.fragment_example_2, container, false)
     }
 
     companion object {
         @JvmStatic
-        fun newInstance() = CountFragment()
+        fun newInstance() = Example2Fragment()
     }
 }
