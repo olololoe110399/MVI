@@ -1,5 +1,7 @@
 package com.sun.demo.di
 
+import com.sun.demo.ui.mviExample3.Example3ViewModel
+import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 /**
@@ -7,5 +9,5 @@ import org.koin.dsl.module
  * 1 ViewModel can be used by several LifeCycleOwners.
  */
 val viewModelModule = module {
-
+    viewModel { Example3ViewModel(repository = get()) }
 }

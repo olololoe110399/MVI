@@ -4,9 +4,8 @@ import com.sun.demo.ui.mviExample2.Example2Contract.*
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import org.koin.core.KoinComponent
 
-class Example2ViewModel : KoinComponent {
+class Example2ViewModel {
     private val example2Processor = Example2Processor()
 
     fun bind(intents: Observable<Example2Intent>): Observable<Example2ViewState> =
@@ -21,7 +20,7 @@ class Example2ViewModel : KoinComponent {
 
     private fun reduce(previousState: Example2ViewState, result: Example2Result) =
         when (result) {
-            is Example2Result.ErrorResult -> Example2ViewState.Error(result.e)
+            is Example2Result.ErrorResult -> Example2ViewState.Error(result.error)
             is Example2Result.SuccessResult -> Example2ViewState.Success(result.movies)
             Example2Result.LoadingResult -> Example2ViewState.Loading
         }
