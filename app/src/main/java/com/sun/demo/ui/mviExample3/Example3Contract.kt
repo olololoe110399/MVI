@@ -1,6 +1,6 @@
 package com.sun.demo.ui.mviExample3
 
-import com.sun.demo.data.repository.source.remote.model.Movie
+import com.sun.demo.data.model.Movie
 
 interface Example3Contract {
 

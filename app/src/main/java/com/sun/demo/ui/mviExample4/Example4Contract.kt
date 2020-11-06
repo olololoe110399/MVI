@@ -4,7 +4,7 @@ import com.sun.demo.base.MviAction
 import com.sun.demo.base.MviIntent
 import com.sun.demo.base.MviResult
 import com.sun.demo.base.MviViewState
-import com.sun.demo.data.repository.source.remote.model.Movie
+import com.sun.demo.data.model.Movie
 
 interface Example4Contract {
 

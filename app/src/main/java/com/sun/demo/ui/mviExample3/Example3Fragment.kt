@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.jakewharton.rxbinding3.view.clicks
 import com.sun.demo.R
-import com.sun.demo.data.repository.source.remote.model.Movie
+import com.sun.demo.data.model.Movie
 import com.sun.demo.ui.mviExample3.Example3Contract.*
 import com.sun.demo.util.gone
 import com.sun.demo.util.visible

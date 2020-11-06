@@ -1,6 +1,6 @@
 package com.sun.demo.data
 
-import com.sun.demo.data.repository.source.remote.model.Movie
+import com.sun.demo.data.model.Movie
 import io.reactivex.Observable
 
 interface RepoRepository {
